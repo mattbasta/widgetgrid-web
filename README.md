@@ -2,6 +2,8 @@
 
 This is the companion app to [widgetgrid-ar](https://github.com/mattbasta/widgetgrid-ar).
 
+![Screenshot of homepage](https://raw.githubusercontent.com/mattbasta/widgetgrid-web/master/screenshot.png)
+
 Note that you should NOT use this in production or derive any production code from it. There are huge problems with it, including:
 
 - Passwords are only SHA1 hashed

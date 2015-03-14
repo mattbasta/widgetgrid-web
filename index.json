@@ -1,0 +1,83 @@
+[{
+	"domain" : "widgetgrid.com",
+	"policies" : [
+		{
+			"type":"subdomain",
+			"domain":"www",
+			"policies":[
+				{
+					"type":"redirect",
+					"href":"http://widgetgrid.com/"
+				}
+			]
+		},
+		{
+			"type" : "lib",
+			"library" : "cloud/cloud"
+		},
+		{
+			"type" : "lib",
+			"library" : "SimpleGeo/SimpleGeo"
+		},
+		{
+			"type" : "lib",
+			"library" : "S3"
+		},
+		{
+			"type" : "folder",
+			"folder" : "images",
+			"policies" : [
+				{
+					"type" : "app",
+					"endpoint" : "static/images",
+					"streaming" : true
+				}
+			]
+		},
+		{
+			"type" : "folder",
+			"folder" : "css",
+			"policies" : [
+				{
+					"type" : "app",
+					"endpoint" : "static/css",
+					"streaming" : true
+				}
+			]
+		},
+		{
+			"type" : "folder",
+			"folder" : "old",
+			"policies" : [
+				{
+					"type" : "app",
+					"endpoint" : "old"
+				}
+			]
+		},
+		{
+			"type" : "folder",
+			"folder" : "android",
+			"policies" : [
+				{
+					"type" : "folder",
+					"folder" : "ar",
+					"policies" : [
+						{
+							"type" : "app",
+							"endpoint" : "android/ar"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type" : "lib",
+			"library" : "validate_email"
+		},
+		{
+			"type" : "app",
+			"endpoint" : "home"
+		}
+	]
+}]

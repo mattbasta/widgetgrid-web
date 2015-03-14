@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<form>
+	<field name="title" type="text">
+		<label>Title</label>
+		<explanation>The name of the widget</explanation>
+		<rule type="symbols">alpha</rule>
+		<rule type="symbols">numeric</rule>
+		<rule type="symbols">whitespace</rule>
+		<rule type="min_length">1</rule>
+	</field>
+	<field name="secure" type="checkbox">
+		<label>Secure</label>
+		<explanation>Elevates the application's permission level</explanation>
+	</field>
+	<field name="no_cache" type="checkbox">
+		<label>Don't Cache</label>
+		<explanation>Don't cache the widget in the device cache. Allows for dynamic widgets.</explanation>
+	</field>
+	<field name="may_purchase" type="checkbox">
+		<label>Allow purchases</label>
+		<explanation>Gives the application permission to make purchases</explanation>
+	</field>
+</form>
